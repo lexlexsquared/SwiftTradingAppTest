@@ -6,17 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		CCD4A6242DD3C74700540C2A /* SwiftTradingAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTradingAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		CCD4A6282DD3C74700540C2A /* SwiftTradingAppTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6272DD3C74700540C2A /* SwiftTradingAppTestApp.swift */; };
+		CCD4A62A2DD3C74700540C2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6292DD3C74700540C2A /* ContentView.swift */; };
+		CCD4A62C2DD3C74B00540C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD4A62B2DD3C74B00540C2A /* Assets.xcassets */; };
+		CCD4A6552DD3D1CC00540C2A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6532DD3D1CC00540C2A /* Color.swift */; };
+		CCD4A65B2DD3D21F00540C2A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A65A2DD3D21F00540C2A /* HomeView.swift */; };
+		CCD4A6602DD3D30C00540C2A /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A65F2DD3D30C00540C2A /* CircleButtonView.swift */; };
+		CCD4A6622DD3DC3D00540C2A /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6612DD3DC3D00540C2A /* CircleButtonAnimationView.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CCD4A6262DD3C74700540C2A /* SwiftTradingAppTest */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftTradingAppTest;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		CCD4A6242DD3C74700540C2A /* SwiftTradingAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SwiftTradingAppTest.app; path = "/Users/alexissmith/devMess/SwiftTradingAppTest/build/Debug-iphoneos/SwiftTradingAppTest.app"; sourceTree = "<absolute>"; };
+		CCD4A6272DD3C74700540C2A /* SwiftTradingAppTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTradingAppTestApp.swift; sourceTree = "<group>"; };
+		CCD4A6292DD3C74700540C2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CCD4A62B2DD3C74B00540C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCD4A6532DD3D1CC00540C2A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		CCD4A65A2DD3D21F00540C2A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CCD4A65F2DD3D30C00540C2A /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		CCD4A6612DD3DC3D00540C2A /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CCD4A6212DD3C74700540C2A /* Frameworks */ = {
@@ -32,17 +41,70 @@
 		CCD4A61B2DD3C74700540C2A = {
 			isa = PBXGroup;
 			children = (
-				CCD4A6262DD3C74700540C2A /* SwiftTradingAppTest */,
-				CCD4A6252DD3C74700540C2A /* Products */,
+				CCD4A62B2DD3C74B00540C2A /* Assets.xcassets */,
+				CCD4A65C2DD3D23300540C2A /* Extensions */,
+				CCD4A6292DD3C74700540C2A /* ContentView.swift */,
+				CCD4A6562DD3D1EA00540C2A /* Core */,
+				CCD4A6272DD3C74700540C2A /* SwiftTradingAppTestApp.swift */,
 			);
 			sourceTree = "<group>";
 		};
-		CCD4A6252DD3C74700540C2A /* Products */ = {
+		CCD4A6562DD3D1EA00540C2A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				CCD4A6242DD3C74700540C2A /* SwiftTradingAppTest.app */,
+				CCD4A65D2DD3D2E700540C2A /* Components */,
+				CCD4A6572DD3D1F500540C2A /* Home */,
 			);
-			name = Products;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CCD4A6572DD3D1F500540C2A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CCD4A6592DD3D20800540C2A /* Views */,
+				CCD4A6582DD3D1FF00540C2A /* ViewModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CCD4A6582DD3D1FF00540C2A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CCD4A6592DD3D20800540C2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCD4A65A2DD3D21F00540C2A /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CCD4A65C2DD3D23300540C2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CCD4A6532DD3D1CC00540C2A /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CCD4A65D2DD3D2E700540C2A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CCD4A65E2DD3D2F800540C2A /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CCD4A65E2DD3D2F800540C2A /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				CCD4A65F2DD3D30C00540C2A /* CircleButtonView.swift */,
+				CCD4A6612DD3DC3D00540C2A /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +121,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CCD4A6262DD3C74700540C2A /* SwiftTradingAppTest */,
 			);
 			name = SwiftTradingAppTest;
 			packageProductDependencies = (
@@ -95,7 +154,7 @@
 			mainGroup = CCD4A61B2DD3C74700540C2A;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = CCD4A6252DD3C74700540C2A /* Products */;
+			productRefGroup = CCD4A61B2DD3C74700540C2A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -109,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD4A62C2DD3C74B00540C2A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD4A6552DD3D1CC00540C2A /* Color.swift in Sources */,
+				CCD4A62A2DD3C74700540C2A /* ContentView.swift in Sources */,
+				CCD4A65B2DD3D21F00540C2A /* HomeView.swift in Sources */,
+				CCD4A6602DD3D30C00540C2A /* CircleButtonView.swift in Sources */,
+				CCD4A6282DD3C74700540C2A /* SwiftTradingAppTestApp.swift in Sources */,
+				CCD4A6622DD3DC3D00540C2A /* CircleButtonAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
