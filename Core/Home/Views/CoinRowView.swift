@@ -58,6 +58,7 @@ extension CoinRowView {
         }
     }
     
+    
     private var rightColumn: some View {
         HStack(spacing: 0) {
             VStack(alignment: .trailing) {

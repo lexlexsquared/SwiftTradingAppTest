@@ -52,7 +52,7 @@
 
 import Foundation
 
-struct CoinModel {
+struct CoinModel: Identifiable, Decodable {
     
     let id, symbol, name: String
     let image: String

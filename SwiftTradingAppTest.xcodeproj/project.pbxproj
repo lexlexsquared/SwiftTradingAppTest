@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC6BEDE42DD5147B00B45740 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6BEDE32DD5147B00B45740 /* CoinDataService.swift */; };
 		CCD4A6282DD3C74700540C2A /* SwiftTradingAppTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6272DD3C74700540C2A /* SwiftTradingAppTestApp.swift */; };
 		CCD4A62A2DD3C74700540C2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6292DD3C74700540C2A /* ContentView.swift */; };
 		CCD4A62C2DD3C74B00540C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD4A62B2DD3C74B00540C2A /* Assets.xcassets */; };
@@ -18,10 +19,12 @@
 		CCD4A6AE2DD3ED9D00540C2A /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6AD2DD3ED9D00540C2A /* CoinRowView.swift */; };
 		CCD4A6B02DD3EE0B00540C2A /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6AF2DD3EE0B00540C2A /* PreviewProvider.swift */; };
 		CCD4A6B22DD3F3B900540C2A /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6B12DD3F3B900540C2A /* Double.swift */; };
+		CCD4A6B42DD4269800540C2A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6B32DD4269800540C2A /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CCD4A6242DD3C74700540C2A /* SwiftTradingAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SwiftTradingAppTest.app; path = "/Users/alexissmith/devMess/SwiftTradingAppTest/build/Debug-iphoneos/SwiftTradingAppTest.app"; sourceTree = "<absolute>"; };
+		CC6BEDC52DD4E6D500B45740 /* SwiftTradingAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTradingAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6BEDE32DD5147B00B45740 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		CCD4A6272DD3C74700540C2A /* SwiftTradingAppTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTradingAppTestApp.swift; sourceTree = "<group>"; };
 		CCD4A6292DD3C74700540C2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CCD4A62B2DD3C74B00540C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		CCD4A6AD2DD3ED9D00540C2A /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		CCD4A6AF2DD3EE0B00540C2A /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		CCD4A6B12DD3F3B900540C2A /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		CCD4A6B32DD4269800540C2A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,15 +50,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC6BEDE22DD5145800B45740 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CC6BEDE32DD5147B00B45740 /* CoinDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		CCD4A61B2DD3C74700540C2A = {
 			isa = PBXGroup;
 			children = (
 				CCD4A62B2DD3C74B00540C2A /* Assets.xcassets */,
+				CC6BEDE22DD5145800B45740 /* Services */,
 				CCD4A6A72DD3E6E300540C2A /* Models */,
 				CCD4A65C2DD3D23300540C2A /* Extensions */,
 				CCD4A6292DD3C74700540C2A /* ContentView.swift */,
 				CCD4A6562DD3D1EA00540C2A /* Core */,
 				CCD4A6272DD3C74700540C2A /* SwiftTradingAppTestApp.swift */,
+				CC6BEDC52DD4E6D500B45740 /* SwiftTradingAppTest.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +93,7 @@
 		CCD4A6582DD3D1FF00540C2A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CCD4A6B32DD4269800540C2A /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -146,7 +161,7 @@
 			packageProductDependencies = (
 			);
 			productName = SwiftTradingAppTest;
-			productReference = CCD4A6242DD3C74700540C2A /* SwiftTradingAppTest.app */;
+			productReference = CC6BEDC52DD4E6D500B45740 /* SwiftTradingAppTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6BEDE42DD5147B00B45740 /* CoinDataService.swift in Sources */,
 				CCD4A6AE2DD3ED9D00540C2A /* CoinRowView.swift in Sources */,
+				CCD4A6B42DD4269800540C2A /* HomeViewModel.swift in Sources */,
 				CCD4A6552DD3D1CC00540C2A /* Color.swift in Sources */,
 				CCD4A62A2DD3C74700540C2A /* ContentView.swift in Sources */,
 				CCD4A65B2DD3D21F00540C2A /* HomeView.swift in Sources */,
