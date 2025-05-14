@@ -18,9 +18,6 @@ struct CoinRowView: View {
             Spacer()
             centerColumn
             rightColumn
-            
-            // use geometry reader if were to make project landscape
-            .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
         }
         .font(.subheadline)
     }
@@ -75,5 +72,7 @@ extension CoinRowView {
                     )
             }
         }
+        // use geometry reader if were to make project landscape
+        .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
     }
 }
