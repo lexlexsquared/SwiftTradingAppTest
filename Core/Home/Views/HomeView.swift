@@ -53,7 +53,7 @@ extension HomeView {
     
     private var homeHeader: some View {
         HStack {
-            CircleButtonView(iconName: showPortfolio ? "plus" : "info")
+            CircleButtonView(iconName: showPortfolio ?     "plus" : "info")
                 // .animation(.none) deprecated
                 .transaction { transaction in
                     transaction.animation = nil

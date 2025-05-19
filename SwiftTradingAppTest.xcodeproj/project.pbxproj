@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC6BEDE42DD5147B00B45740 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6BEDE32DD5147B00B45740 /* CoinDataService.swift */; };
+		CC6BEDE72DD5238500B45740 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6BEDE62DD5238400B45740 /* NetworkingManager.swift */; };
 		CCD4A6282DD3C74700540C2A /* SwiftTradingAppTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6272DD3C74700540C2A /* SwiftTradingAppTestApp.swift */; };
 		CCD4A62A2DD3C74700540C2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4A6292DD3C74700540C2A /* ContentView.swift */; };
 		CCD4A62C2DD3C74B00540C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD4A62B2DD3C74B00540C2A /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		CC6BEDC52DD4E6D500B45740 /* SwiftTradingAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTradingAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6BEDE32DD5147B00B45740 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		CC6BEDE62DD5238400B45740 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		CCD4A6272DD3C74700540C2A /* SwiftTradingAppTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTradingAppTestApp.swift; sourceTree = "<group>"; };
 		CCD4A6292DD3C74700540C2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CCD4A62B2DD3C74B00540C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,10 +60,19 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		CC6BEDE52DD5234A00B45740 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CC6BEDE62DD5238400B45740 /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		CCD4A61B2DD3C74700540C2A = {
 			isa = PBXGroup;
 			children = (
 				CCD4A62B2DD3C74B00540C2A /* Assets.xcassets */,
+				CC6BEDE52DD5234A00B45740 /* Utilities */,
 				CC6BEDE22DD5145800B45740 /* Services */,
 				CCD4A6A72DD3E6E300540C2A /* Models */,
 				CCD4A65C2DD3D23300540C2A /* Extensions */,
@@ -222,6 +233,7 @@
 				CCD4A65B2DD3D21F00540C2A /* HomeView.swift in Sources */,
 				CCD4A6602DD3D30C00540C2A /* CircleButtonView.swift in Sources */,
 				CCD4A6282DD3C74700540C2A /* SwiftTradingAppTestApp.swift in Sources */,
+				CC6BEDE72DD5238500B45740 /* NetworkingManager.swift in Sources */,
 				CCD4A6622DD3DC3D00540C2A /* CircleButtonAnimationView.swift in Sources */,
 				CCD4A6B02DD3EE0B00540C2A /* PreviewProvider.swift in Sources */,
 				CCD4A6B22DD3F3B900540C2A /* Double.swift in Sources */,
